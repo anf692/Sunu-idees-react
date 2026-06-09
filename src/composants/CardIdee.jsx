@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./CardIdee.css";
 
 
 
@@ -11,12 +12,17 @@ function CardIdee(props){
     }
 
     return(
-        <div style={{ border: "1px solid #ccc", borderRadius: "8px", padding: "16px", margin: "12px" }}>
-            <h2>{props.titre}</h2>
-            <p>{props.description}</p>
-            <button onClick={Comptevote}>
-                Vote👍({vote})
-            </button>
+        <div className="card">
+            <img src={props.image} alt="" />
+
+            <div className="card-content">
+                <h2>{props.titre}</h2>
+                <p>{props.description}</p>
+
+                <button onClick={Comptevote}>
+                Vote 👍 ({vote})
+                </button>
+            </div>
         </div>
     )
 }
