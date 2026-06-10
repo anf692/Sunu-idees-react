@@ -3,7 +3,7 @@ import "./CardIdee.css";
 
 
 
-function CardIdee(props){
+function CardIdee({image, titre, description}){
 
     const [vote, setVote]= useState(0)
 
@@ -13,11 +13,11 @@ function CardIdee(props){
 
     return(
         <div className="card">
-            <img src={props.image} alt="" />
+            <img src={image} alt="" />
 
             <div className="card-content">
-                <h2>{props.titre}</h2>
-                <p>{props.description}</p>
+                <h2>{titre}</h2>
+                <p>{description}</p>
 
                 <button onClick={Comptevote}>
                 Vote 👍 ({vote})
