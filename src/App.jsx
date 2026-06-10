@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CardIdee from "./components/CardIdee";
 
-const App = () => {
+const App = () => { 
   const idees = [
     {
       id: 1,
