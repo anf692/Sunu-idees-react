@@ -29,7 +29,7 @@ const idees = [
     id: 4,
     image: laye,
     titre: "Abdoulaye NDIAYE",
-    description: "Champion incontesté du sabotage discret : toujours en train de déranger Mame Saye avec ses pieds… une vraie stratégie de guerre silencieuse"
+    description: "description de Abdoulaye"
   },
   {
     id: 5,
