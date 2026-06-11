@@ -6,6 +6,7 @@ function CardDetail() {
 
   const { id } = useParams(); //id dans l'URL est une variable dynamique. useParams() est le hook React Router qui récupère cette variable depuis l'URL.
 
+  console.log(useParams())
   const idee = idees.find((i) => i.id === parseInt(id));
 
   if (!idee) {
