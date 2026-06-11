@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@400;500&display=swap');
+
 /* CONTAINER GLOBAL */
 .detail-container {
   min-height: 100vh;
@@ -6,6 +8,7 @@
   align-items: center;
   background: #f9fafb;
   padding: 20px;
+  font-family: 'Syne', sans-serif;
 }
 
 /* CARD */
