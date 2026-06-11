@@ -1,32 +1,38 @@
 import { useState } from "react";
-import "./CardIdee.css";
+import "./css/CardIdee.css";
+import { idees } from "../data/data";
+import CardItem from "./CardItem";
 
 
 
-function CardIdee({image, titre, description}){
-
-    const [vote, setVote]= useState(0)
-
-    function Comptevote(){
-        setVote(vote + 1)
-    }
+function CardIdee(){
 
     return(
-        <div className="card">
-            <img src={image} alt="" />
 
-            <div className="card-content">
-                <h2>{titre}</h2>
-                <p>{description}</p>
+        <div>
 
-                <button onClick={Comptevote}>
-                Vote 👍 ({vote})
-                </button>
+            <h2 className="title">Sunu-Idee (G3)👑</h2>
+
+            <div className="parent">
+
+                {idees.map((i)=>(
+                    <CardItem 
+                    key={i.id}
+                    id={i.id}
+                    titre={i.titre}
+                    description={i.description}
+                    image={i.image}
+                    />
+                ))}
+                
             </div>
+
         </div>
+        
     )
 }
 
 export default CardIdee;
+
 
 
