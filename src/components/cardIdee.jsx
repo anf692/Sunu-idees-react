@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import {Link} from "react-router-dom"
 
 const CardIdee = (props) => {
   const [voter, setVoter] = useState(0);
@@ -19,6 +20,7 @@ const CardIdee = (props) => {
         >
           Vote
         </button>
+        <Link to={`/detail/${props.id}`}>Voir les details</Link>
        </div>
       </div>
     </div>
